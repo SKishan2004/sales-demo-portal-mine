@@ -1,0 +1,17 @@
+[Unit]
+Description=Mobileum Sales Demo Portal API
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=mobileum
+WorkingDirectory=/opt/mobileum/sales-demo-portal
+EnvironmentFile=/opt/mobileum/sales-demo-portal/.env
+ExecStart=/usr/bin/node apps/api/dist/server.js
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="28" y="28" width="1224" height="664" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <rect x="28" y="28" width="1224" height="62" rx="20" fill="#F1F5F9"/>
+  <circle cx="66" cy="59" r="5.5" fill="#CBD5E1"/>
+  <circle cx="86" cy="59" r="5.5" fill="#CBD5E1"/>
+  <circle cx="106" cy="59" r="5.5" fill="#CBD5E1"/>
+  <text x="140" y="65" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="600">Voice Policy Engine — Policy Control Center</text>
+  <rect x="1012" y="43" width="212" height="32" rx="16" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="1118" y="64" text-anchor="middle" fill="#1D4ED8" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="600">SAMPLE UI PREVIEW</text>
+  <text x="60" y="128" fill="#475569" font-family="Inter,Segoe UI,sans-serif" font-size="15">Illustrative Module: Real-time voice screening, policy rules & caller branding</text>
+  
+        <rect x="60" y="152" width="368" height="118" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="84" y="188" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="500">Policy Engine</text>
+        <text x="84" y="232" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="700">Rule Matrix</text>
+        <rect x="84" y="246" width="88" height="5" rx="2.5" fill="#1D4ED8" opacity="0.85"/>
+      
+        <rect x="448" y="152" width="368" height="118" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="472" y="188" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="500">Caller Identity</text>
+        <text x="472" y="232" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="700">Branded Call</text>
+        <rect x="472" y="246" width="88" height="5" rx="2.5" fill="#1D4ED8" opacity="0.85"/>
+      
+        <rect x="836" y="152" width="368" height="118" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="860" y="188" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="500">Spam Shield</text>
+        <text x="860" y="232" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="700">Real-Time</text>
+        <rect x="860" y="246" width="88" height="5" rx="2.5" fill="#1D4ED8" opacity="0.85"/>
+      
+  <rect x="60" y="296" width="696" height="356" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="86" y="332" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600">Module Workflow &amp; Activity View</text>
+  <line x1="80" y1="400" x2="730" y2="400" stroke="#E2E8F0" stroke-dasharray="4 4"/>
+  <line x1="80" y1="460" x2="730" y2="460" stroke="#E2E8F0" stroke-dasharray="4 4"/>
+  <line x1="80" y1="520" x2="730" y2="520" stroke="#CBD5E1"/>
+  <polygon points="80,520 80,478 175,442 270,456 365,408 460,424 555,382 650,366 650,520" fill="url(#area)"/>
+  <polyline points="80,478 175,442 270,456 365,408 460,424 555,382 650,366" fill="none" stroke="#1D4ED8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="768" y="296" width="440" height="356" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="792" y="328" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600">Active Capabilities</text>
+  
+        <rect x="784" y="342" width="408" height="58" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <circle cx="812" cy="371" r="6" fill="#1D4ED8"/>
+        <text x="832" y="367" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="600">Policy Decision Engine</text>
+        <text x="832" y="386" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="12">Configurable call-handling workflows</text>
+      
+        <rect x="784" y="416" width="408" height="58" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <circle cx="812" cy="445" r="6" fill="#1D4ED8"/>
+        <text x="832" y="441" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="600">Branded Call Identity</text>
+        <text x="832" y="460" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="12">Verified enterprise caller presentation</text>
+      
+        <rect x="784" y="490" width="408" height="58" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <circle cx="812" cy="519" r="6" fill="#1D4ED8"/>
+        <text x="832" y="515" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="600">Spam Notification Shield</text>
+        <text x="832" y="534" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="12">Risk scoring & subscriber alerts</text>
+      
+        <rect x="784" y="564" width="408" height="58" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <circle cx="812" cy="593" r="6" fill="#1D4ED8"/>
+        <text x="832" y="589" fill="#0F172A" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="600">Audit & Policy Trace</text>
+        <text x="832" y="608" fill="#64748B" font-family="Inter,Segoe UI,sans-serif" font-size="12">End-to-end event visibility</text>
+      
+</svg>

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ice-50: #f4f8ff;
+  --color-ice-100: #e8f1ff;
+  --color-mobileum-blue: #1d4ed8;
+
+  --font-sans: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --primary: #1d4ed8;
+  --primary-foreground: #ffffff;
+  --secondary: #eff6ff;
+  --secondary-foreground: #1e3a8a;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --border: #e2e8f0;
+  --ring: #2563eb;
+  --radius: 0.75rem;
+}

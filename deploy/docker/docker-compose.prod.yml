@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-mobileum_sales_demo}
+      POSTGRES_USER: ${POSTGRES_USER:-mobileum_demo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in environment}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-mobileum_demo} -d ${POSTGRES_DB:-mobileum_sales_demo}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ../..
+      dockerfile: apps/api/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      DATABASE_URL: postgresql://${POSTGRES_USER:-mobileum_demo}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-mobileum_sales_demo}
+      MEDIA_STORAGE_DIR: /var/lib/mobileum-storage
+      SESSION_SECRET: ${SESSION_SECRET:?Set SESSION_SECRET}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost}
+    volumes:
+      - media_storage:/var/lib/mobileum-storage
+
+volumes:
+  pg_data:
+  media_storage:

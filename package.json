@@ -1,0 +1,27 @@
+{
+  "name": "mobileum-sales-demo-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobileum Sales Demo Portal & Admin CMS Monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:portal": "npm --workspace=@mobileum/portal run dev",
+    "dev:admin": "npm --workspace=@mobileum/admin run dev",
+    "dev:api": "npm --workspace=@mobileum/api run dev",
+    "build": "npm run build:shared && npm run build:portal && npm run build:admin && npm run build:api",
+    "build:shared": "npm --workspace=@mobileum/shared run build",
+    "build:portal": "npm --workspace=@mobileum/portal run build",
+    "build:admin": "npm --workspace=@mobileum/admin run build",
+    "build:api": "npm --workspace=@mobileum/api run build",
+    "typecheck": "npm --workspace=@mobileum/shared run typecheck && npm --workspace=@mobileum/portal run typecheck && npm --workspace=@mobileum/admin run typecheck && npm --workspace=@mobileum/api run typecheck",
+    "db:migrate": "npm --workspace=@mobileum/api run db:migrate",
+    "db:seed": "npm --workspace=@mobileum/api run db:seed"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
